@@ -22,7 +22,7 @@ mongoose
 //middleware
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin: process.env.SITE_URL,
 	})
 );
 app.use(express.json());
