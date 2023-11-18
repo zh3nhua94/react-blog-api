@@ -29,4 +29,4 @@ jobs:
         touch .env
         echo "${{ secrets.PROD_ENV_FILE }}" > .env
     - run: npm run build --if-present
-    #- run: pm2 restart index
+    - run: sudo pm2 restart backend
